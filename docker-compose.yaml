@@ -6,5 +6,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3001:3000"
+    command:
+      - node
+      - "bin/www" 
     volumes:
       - .:/usr/src/app
