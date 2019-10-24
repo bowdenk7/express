@@ -6,8 +6,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+      - "9229:9229"
     command:
       - node
+      - "--inspect"
       - "bin/www" 
     volumes:
       - .:/usr/src/app
